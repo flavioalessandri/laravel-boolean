@@ -19332,6 +19332,10 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+document.addEventListener('DOMContentLoaded', function (event) {
+  console.log('DOM fully loaded and parsed');
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
