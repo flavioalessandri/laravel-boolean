@@ -1,0 +1,31 @@
+header{
+
+  font-family: 'Teko', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+
+  .logo{
+    width:100%;
+    margin:30px auto;
+    text-align: center;
+
+    a{
+      width:200px;
+    }
+  }
+
+  .link{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+    a{
+      text-decoration: none;
+      padding:40px 60px;
+      color:rgba(0,25,66,1);
+    }
+
+  }
+
+
+}
