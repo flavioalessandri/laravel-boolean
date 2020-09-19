@@ -46,7 +46,7 @@ header .link a {
   font-weight: 500;
 }
 
-main section #product,
+main section #home,
 main section #news {
   line-height: 2;
   text-align: center;
@@ -85,14 +85,18 @@ main .typology .cards .card {
 }
 
 main .typology .cards .card img {
+  filter: grayscale(10%);
+  opacity: 0.85;
   width: 100%;
   height: auto;
-  transition: 0.2s;
+  transition: all 0.2s;
 }
 
 main .typology .cards .card img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
   cursor: pointer;
-  transform: scale(1.4);
+  transform: scale(1.15);
 }
 
 footer .footer {

@@ -13,16 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-
-    return view('welcome');
-});
-
-Route::get('home/prodotti', function () {
-    return view('prodotti');
-}) -> name('prodotti');
+// Route::get('/', function () {
+//
+//     return view('welcome');
+// });
 
 Route::get('home', function () {
+    return view('home');
+}) -> name('home');
+
+Route::get('/', function () {
 
   $data = [
   [
@@ -147,9 +147,9 @@ Route::get('home', function () {
   ]
 ];
 
-    return view('home',compact('data'));
-}) -> name('home');
+    return view('prodotti',compact('data'));
+}) -> name('prodotti');
 
-Route::get('home/news', function () {
+Route::get('news', function () {
     return view('news');
 }) -> name('news');
