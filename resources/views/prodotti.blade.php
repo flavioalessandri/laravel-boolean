@@ -9,8 +9,8 @@
 
         @if ($pasta['tipo'] == 'lunga')
 
-          <div class="card" data-name="{{$pasta['tipo']}}">
-            <img src="{{ asset($pasta['src'])}}" alt="{{ asset($pasta['src'])}}">
+          <div class="card" data-name="{{ $pasta['tipo'] }}">
+            <img src="{{ $pasta['src'] }}" alt="{{ $pasta['src'] }}">
           </div>
 
         @endif
@@ -27,7 +27,7 @@
         @if ($pasta['tipo'] == 'corta')
 
           <div class="card" data-name="{{$pasta['tipo']}}">
-            <img src="{{ asset($pasta['src'])}}" alt="{{ asset($pasta['src'])}}">
+            <img src="{{ $pasta['src'] }}" alt="{{ $pasta['src'] }}">
           </div>
 
         @endif
@@ -44,7 +44,7 @@
         @if ($pasta['tipo'] == 'cortissima')
 
           <div class="card" data-name="{{$pasta['tipo']}}">
-            <img src="{{ asset($pasta['src'])}}" alt="{{ asset($pasta['src'])}}">
+            <img src="{{ $pasta['src'] }}" alt="{{ $pasta['src'] }}">
           </div>
 
         @endif
